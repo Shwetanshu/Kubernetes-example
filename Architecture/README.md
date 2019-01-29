@@ -1,1 +1,1 @@
-![alt text](https://github.com/Shwetanshu/Kubernetes-example.git/Architecture/Architecture_Diagram.img)
+![alt text](https://github.com/Shwetanshu/Kubernetes-example/blob/master/Architecture/Architecture_Diagram.png)
