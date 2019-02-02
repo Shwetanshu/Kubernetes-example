@@ -13,12 +13,19 @@ Nodes - Are the ‘workers’ of a Kubernetes cluster. They run a minimal agent 
 Master Node is the Control Plane of Kubernetes Cluster. Following are the main components of control plane :
 
 1. kube-apiserver
+
 	Gate keeper for everything in kubernetes
 	EVERYTHING interacts with kubernetes through the apiserver
+
 2. etcd
+
 	Distributed storage back end for kubernetes
 	The apiserver is the only thing that talks to it
+
 3. kube-controller-manager
+
 	The home of the core controllers
+
 4. kube-scheduler
+
 	handes placement
