@@ -14,12 +14,12 @@ Master Node is the Control Plane of Kubernetes Cluster. Following are the main c
 
 1. kube-apiserver
 
-	Gate keeper for everything in kubernetes
+	Gate keeper for everything in kubernetes<br/>
 	EVERYTHING interacts with kubernetes through the apiserver
 
 2. etcd
 
-	Distributed storage back end for kubernetes
+	Distributed storage back end for kubernetes<br/>
 	The apiserver is the only thing that talks to it
 
 3. kube-controller-manager
