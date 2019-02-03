@@ -1,4 +1,4 @@
-## Kubernetes Architecture Diagram
+# Kubernetes Architecture Diagram
 
 ![alt text](https://github.com/Shwetanshu/Kubernetes-example/blob/master/Architecture/Architecture_Diagram.png)
 
@@ -8,7 +8,7 @@ Masters - Acts as the primary control plane for Kubernetes. Masters are responsi
 
 Nodes - Are the ‘workers’ of a Kubernetes cluster. They run a minimal agent that manages the node itself, and are tasked with executing workloads as designated by the master. 
 
-# Master Node Components
+## Master Node Components
 
 Master Node is the Control Plane of Kubernetes Cluster. Following are the main components of control plane :
 
@@ -30,7 +30,7 @@ Master Node is the Control Plane of Kubernetes Cluster. Following are the main c
 
 	handles placement
 
-# Worker Node Components
+## Worker Node Components
 
 Worker node component runs on every cluster node. These includes:
 
@@ -41,3 +41,7 @@ health of those pods (for example, by restarting failed pods)
 
 3. kube-proxy : a network proxy/loadbalancer that implements the Service abstraction. It programs the iptables rules on
 the node to redirect service IP requests to one of its registered backend pods.
+
+Another HLD for Kubernetes :
+
+![alt text](https://github.com/Shwetanshu/Kubernetes-example/blob/master/Architecture/K8s_HLD.png)
