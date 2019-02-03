@@ -54,6 +54,10 @@ Worker node component runs on every cluster node. These includes:
 3. kube-proxy : a network proxy/loadbalancer that implements the Service abstraction. It programs the iptables rules on
 the node to redirect service IP requests to one of its registered backend pods.
 
+## Addons
+
+Addons are pods and services that implement cluster features.Namespaced addon objects are created in the kube-system namespace. For list of available addons please refer [Addons](https://kubernetes.io/docs/concepts/cluster-administration/addons/)
+
 ### Another HLD for Kubernetes :
 
 ![alt text](https://github.com/Shwetanshu/Kubernetes-example/blob/master/img/K8s_HLD.png)
