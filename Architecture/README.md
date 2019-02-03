@@ -28,4 +28,16 @@ Master Node is the Control Plane of Kubernetes Cluster. Following are the main c
 
 4. kube-scheduler
 
-	handes placement
+	handles placement
+
+# Worker Node Components
+
+Worker node component runs on every cluster node. These includes:
+
+1. container runtime : such as Docker, to execute containers on the node
+
+2. kubelet : executes containers (pods) on the node as dictated by the control plane’s scheduling, and ensures the
+health of those pods (for example, by restarting failed pods)
+
+3. kube-proxy : a network proxy/loadbalancer that implements the Service abstraction. It programs the iptables rules on
+the node to redirect service IP requests to one of its registered backend pods.
