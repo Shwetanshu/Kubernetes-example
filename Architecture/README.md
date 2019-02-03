@@ -14,21 +14,25 @@ Master Node is the Control Plane of Kubernetes Cluster. Following are the main c
 
 1. kube-apiserver
 
-   Gate keeper for everything in kubernetes<br/>
-   EVERYTHING interacts with kubernetes through the apiserver
+   Gate keeper for everything in kubernetes.<br/>
+   EVERYTHING interacts with kubernetes through the apiserver.
 
 2. etcd
 
-	Distributed storage back end for kubernetes<br/>
-	The apiserver is the only thing that talks to it
+   Distributed storage back end for kubernetes.<br/>
+   The apiserver is the only thing that talks to it.
 
 3. kube-controller-manager
 
-	The home of the core controllers
+   The home of the core controllers.Logically, each controller is a separate process, but to reduce complexity, they are all compiled into a single binary and run in a single process.These controllers include:
+      - Node Controller
+      - Replication Controller
+      - Endpoints Controller
+      - Service Account & Token Controllers
 
 4. kube-scheduler
 
-	handles placement
+   handles placement.
 
 ## Worker Node Components
 
