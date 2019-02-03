@@ -12,3 +12,10 @@ The replication factor depends on the level of availability one need to achieve.
 HA cluster with a replication factor of three could be realized as illustrated in the following diagram:
 
 ![alt text](https://github.com/Shwetanshu/Kubernetes-example/blob/master/img/HA_Cluster.png)
+
+- etcd replicates the cluster state to all master nodes. Therefore, to lose all data, all three nodes must experience simultaneous disk failures. Although unlikely, one may want to make the storage layer even more reliable by using a separate disk that is decoupled from the lifecycle of the machine/VM. You can also use a RAID setup to mirror disks, and finally set up etcd to take periodical backups.
+- The etcd replicas can be placed on separate, dedicated machines to isolate them and give them dedicated machine resources for improved performance.
+- The load-balancer must monitor the health of its apiservers and only forward traffic to live servers.
+- Spread masters across data centers to increase the overall uptime of the cluster. If the masters are placed in different zones, the cluster can tolerate the outage of an entire availability zone.
+- (Worker) node kubelets and kube-proxys must access the apiserver via the load-balancer to not tie them to a particular master instance.
+- The loadbalancer must not become a single point of failure. Most cloud providers can offer fault-tolerant loadbalancer services. For on-premise setups, one can make use of an active/passive nginx/HAProxy setup with a virtual/floating IP that is re-assigned by keepalived when failover is required.
