@@ -7,7 +7,7 @@ There are few common guidelines for HA cluster setup:
 - We need to replicate the controllers and schedulers and set them up for leader-election.
 - We need to configure the (worker) nodes’ kubelet and kube-proxy to access the apiserver through the loadbalancer.
 
-The replication factor depends on the level of availability one need to achieve. With three sets of master components the cluster can tolerate a failure of one master node since, in that case, etcd requires two live members to be able to form a quorum (a node majority) and continue working.
+The replication factor depends on the level of availability one need to achieve. With three sets of master components the cluster can tolerate a failure of one master node since, in that case, etcd requires two live members to be able to form a quorum (a node majority) and continue working. Below table provides the fault-tolerance of different etcd cluster sizes.
 
 CLUSTER SIZE|MAJORITY|FAILURE TOLERANCE
 ---|---|---
