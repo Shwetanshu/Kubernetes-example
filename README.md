@@ -1,3 +1,5 @@
-# Kubernetes Example
+# Kubernetes
 
-This repo is just a sample deployments of Kubernetes components.
+This repo is giving an insight to Kubernetes.
+
+[Kubernetes API](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/)
