@@ -1,6 +1,6 @@
 # Kubernetes Architecture Diagram
 
-![alt text](https://github.com/Shwetanshu/Kubernetes-example/blob/master/Architecture/Architecture_Diagram.png)
+![alt text](https://github.com/Shwetanshu/Kubernetes-example/blob/master/img/Architecture_Diagram.png)
 
 Kubernetes Architecture has two nodes : Master Node & Worker Node
 
@@ -44,4 +44,4 @@ the node to redirect service IP requests to one of its registered backend pods.
 
 Another HLD for Kubernetes :
 
-![alt text](https://github.com/Shwetanshu/Kubernetes-example/blob/master/Architecture/K8s_HLD.png)
+![alt text](https://github.com/Shwetanshu/Kubernetes-example/blob/master/img/K8s_HLD.png)
