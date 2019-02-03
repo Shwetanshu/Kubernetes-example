@@ -14,8 +14,8 @@ Master Node is the Control Plane of Kubernetes Cluster. Following are the main c
 
 1. kube-apiserver
 
-...Gate keeper for everything in kubernetes<br/>
-...EVERYTHING interacts with kubernetes through the apiserver
+   Gate keeper for everything in kubernetes<br/>
+   EVERYTHING interacts with kubernetes through the apiserver
 
 2. etcd
 
