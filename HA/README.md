@@ -9,6 +9,7 @@ There are few common guidelines for HA cluster setup:
 
 The replication factor depends on the level of availability one need to achieve. With three sets of master components the cluster can tolerate a failure of one master node since, in that case, etcd requires two live members to be able to form a quorum (a node majority) and continue working.
 
+---
 HA cluster with a replication factor of three could be realized as illustrated in the following diagram:
 
 ![alt text](https://github.com/Shwetanshu/Kubernetes-example/blob/master/img/HA_Cluster.png)
