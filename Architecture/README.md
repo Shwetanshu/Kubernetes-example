@@ -42,6 +42,6 @@ health of those pods (for example, by restarting failed pods)
 3. kube-proxy : a network proxy/loadbalancer that implements the Service abstraction. It programs the iptables rules on
 the node to redirect service IP requests to one of its registered backend pods.
 
-Another HLD for Kubernetes :
+###Another HLD for Kubernetes :
 
 ![alt text](https://github.com/Shwetanshu/Kubernetes-example/blob/master/img/K8s_HLD.png)
