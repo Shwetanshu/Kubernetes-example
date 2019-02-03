@@ -11,4 +11,4 @@ The replication factor depends on the level of availability one need to achieve.
 
 HA cluster with a replication factor of three could be realized as illustrated in the following diagram:
 
-![alt text](https://github.com/Shwetanshu/Kubernetes-example/blob/master/img/"HA_Cluster.png")
+![alt text](https://github.com/Shwetanshu/Kubernetes-example/blob/master/img/HA_Cluster.png)
